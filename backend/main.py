@@ -1,22 +1,15 @@
 # ------------Project Imports 
 from utils.consts import *
-from app.response import EmptyDictResponse
-from db.database import get_db 
 from moduleUser.route import userRouter
 from moduleOrder.route import orderRouter
-from moduleOrder.enums import OrderStatus
-from moduleOrder.model import getTotalOrdersCountModel
 from moduleOrder.seed import *
 
-
 # ------------Lib Imports 
-from sqlalchemy.orm import Session
 from fastapi import FastAPI, Request, status ,Depends
 from fastapi.staticfiles import StaticFiles
 from fastapi.encoders import jsonable_encoder
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.exceptions import RequestValidationError, HTTPException
 
 # app = FastAPI(debug=True)
 app = FastAPI(
@@ -30,8 +23,6 @@ app = FastAPI(
     # swagger_ui=True,  # Enable Swagger UI
 )
 
-
-app.mount("/static", StaticFiles(directory="static"), name="static")
 
 app.add_middleware(
     CORSMiddleware,

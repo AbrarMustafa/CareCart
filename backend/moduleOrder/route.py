@@ -1,7 +1,6 @@
 # ------------Project Imports 
 from utils.consts import *
 from moduleOrder.model import *
-from moduleOrder.depends import * 
 from moduleOrder.request import OrderRequest
 from moduleOrder.wrapper import createOrder, getOrders
 

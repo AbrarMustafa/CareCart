@@ -1,7 +1,5 @@
 import json
 from sqlalchemy.orm import Session
-from moduleOrder.model import createSurchargeModel
-from moduleOrder.request import SurchargeRequest
 
 def seedSurcharges(db: Session):
     data = json.load(open('./seedJson/surcharge.json'))

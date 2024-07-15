@@ -1,5 +1,4 @@
 # ------------Project Imports 
-from moduleOrder.enums import OrderStatus
 
 # ------------Lib Imports 
 from pydantic import BaseModel,validator

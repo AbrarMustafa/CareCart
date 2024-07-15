@@ -1,6 +1,5 @@
 # ------------Project Imports 
 from app.response import BaseResponse, CreatedUpdatedResponse
-from moduleOrder.response.cart import CartModelResponse
 
 # ------------Lib Imports 
 from pydantic import BaseModel, Json

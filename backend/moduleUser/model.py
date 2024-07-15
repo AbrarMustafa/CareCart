@@ -1,11 +1,8 @@
 # ------------Project Imports 
 
-from app.config import Settings
-from utils.consts import POSTGRES, MYSQL
-from app.commonMixin import DateColumnMixin
 from db.database import get_db, Base
 
-from moduleUser.request import UserRequest, UserUpdateRequest
+from moduleUser.request import UserRequest
 from moduleUser.tables import *
 
 # ------------Lib Imports 
@@ -24,7 +21,6 @@ from sqlalchemy.dialects.postgresql import ENUM
 # models.py
 from sqlalchemy import Column, String, BigInteger, Boolean, ForeignKey
 from sqlalchemy.orm import relationship
-from main import Base
 
 class UserAccountModel(Base):
     __tablename__ = 'user_accounts'

@@ -1,5 +1,4 @@
 # ------------Project Imports 
-from db.database import get_db, Base
 from app.config import Settings
 from utils.consts import *
 from utils.commons import *
