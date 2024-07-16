@@ -17,14 +17,10 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void login() async {
     try {
-      User user = await apiService.loginUser(
-        userNameController.text,
-        passwordController.text,
-      );
-      // Navigate to orders screen after successful login
-      Navigator.pushReplacement(
+      await apiService.loginUser(
         context,
-        MaterialPageRoute(builder: (context) => OrdersScreen(user: user)),
+        userNameController.text,
+        passwordController.text
       );
     } catch (e) {
       ScaffoldMessenger.of(context).showSnackBar(SnackBar(

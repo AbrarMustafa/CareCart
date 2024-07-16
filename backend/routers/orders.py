@@ -18,6 +18,6 @@ def create_order(order: schemas.OrderCreate, db: Session = Depends(get_db)):
     return crud.create_order(db=db, order=order)
 
 @router.get("/orders/", response_model=List[schemas.Order])
-def read_orders(skip: int = 0, limit: int = 10, db: Session = Depends(get_db)):
+def read_orders(skip: int = 0, limit: int = 1000, db: Session = Depends(get_db)):
     orders = crud.get_orders(db, skip=skip, limit=limit)
     return orders

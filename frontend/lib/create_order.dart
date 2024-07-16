@@ -4,8 +4,6 @@ import 'api_service.dart';
 import 'models.dart';
 
 class CreateOrderScreen extends StatefulWidget {
-  final User user; // Pass the logged-in user to this screen
-  CreateOrderScreen(this.user);
 
   @override
   _CreateOrderScreenState createState() => _CreateOrderScreenState();
@@ -43,7 +41,7 @@ class _CreateOrderScreenState extends State<CreateOrderScreen> {
         note: "", // Adjust based on your UI or leave empty if not used
         createdDate: DateTime.now(), // Set current date/time or adjust as needed
         productDeliveryDate: DateTime.now(), // Set as needed
-        shopperId: widget.user.id, // Assuming user is passed as a widget parameter
+        shopperId: 0, // Assuming user is passed as a widget parameter
         cartId: 0, // Adjust based on your application logic
         userAccountId: 0,//widget.user.account.id, // Assuming user account is part of User model
         tip: 0.0, // Default tip or adjust as needed

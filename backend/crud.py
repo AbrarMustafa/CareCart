@@ -1,5 +1,10 @@
 from sqlalchemy.orm import Session
 import models, schemas
+from sqlalchemy.orm import Session
+from models import Account  # Import your Account model
+
+def get_user_by_username(db: Session, username: str):
+    return db.query(Account).filter(Account.user_name == username).first()
 
 # Customers CRUD
 def get_customer(db: Session, customer_id: int):

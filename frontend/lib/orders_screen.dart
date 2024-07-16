@@ -7,9 +7,6 @@ import 'api_service.dart';
 import 'models.dart';
 
 class OrdersScreen extends StatefulWidget {
-  final User user; // Pass the logged-in user to this screen
-
-  OrdersScreen({required this.user});
 
   @override
   _OrdersScreenState createState() => _OrdersScreenState();
@@ -79,7 +76,7 @@ class _OrdersScreenState extends State<OrdersScreen> {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => CreateOrderScreen(widget.user), // Navigate to create order screen
+              builder: (context) => CreateOrderScreen(), // Navigate to create order screen
             ),
           );
         },

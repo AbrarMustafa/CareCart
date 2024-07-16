@@ -9,27 +9,27 @@ part of 'models.dart';
 Order _$OrderFromJson(Map<String, dynamic> json) => Order(
       id: (json['id'] as num).toInt(),
       address: json['address'] as String,
-      contactNumber: json['contactNumber'] as String,
+      contactNumber: json['contact_number'] as String,
       note: json['note'] as String,
-      createdDate: DateTime.parse(json['createdDate'] as String),
+      createdDate: DateTime.parse(json['created_date'] as String),
       productDeliveryDate:
-          DateTime.parse(json['productDeliveryDate'] as String),
-      shopperId: (json['shopperId'] as num).toInt(),
-      cartId: (json['cartId'] as num).toInt(),
-      userAccountId: (json['userAccountId'] as num).toInt(),
+          DateTime.parse(json['product_delivery_date'] as String),
+      shopperId: (json['shopper_id'] as num).toInt(),
+      cartId: (json['cart_id'] as num).toInt(),
+      userAccountId: (json['user_account_id'] as num).toInt(),
       tip: (json['tip'] as num).toDouble(),
     );
 
 Map<String, dynamic> _$OrderToJson(Order instance) => <String, dynamic>{
       'id': instance.id,
       'address': instance.address,
-      'contactNumber': instance.contactNumber,
+      'contact_number': instance.contactNumber,
       'note': instance.note,
-      'createdDate': instance.createdDate.toIso8601String(),
-      'productDeliveryDate': instance.productDeliveryDate.toIso8601String(),
-      'shopperId': instance.shopperId,
-      'cartId': instance.cartId,
-      'userAccountId': instance.userAccountId,
+      'created_date': instance.createdDate.toIso8601String(),
+      'product_delivery_date': instance.productDeliveryDate.toIso8601String(),
+      'shopper_id': instance.shopperId,
+      'cart_id': instance.cartId,
+      'user_account_id': instance.userAccountId,
       'tip': instance.tip,
     };
 
