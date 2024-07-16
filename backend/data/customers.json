@@ -1,0 +1,65 @@
+
+{
+    "Customers": [
+        {
+            "id" : 73,
+            "account": {
+                "id" : 78,
+                "external_id" : "account-username",
+                "user_name" : "username",
+                "password" : "7492d408597533d2d9c69d092989bfbf",
+                "email" : "username@gmail.com",
+                "is_verified" : true,
+                "is_active" : true,
+                "is_soft_deleted" : false,
+                "delete_reason" : null,
+                "created" : 1720721520,
+                "edited" : null
+            },
+            "name" : "Dwight",
+            "surname" : "Schrute",
+            "phone_number" : "123456789123152",
+            "created" : 1720721520,
+            "edited" : null,
+            "location": {
+                "id" : 65,
+                "address" : "Some street 123",
+                "zipcode" : "33301",
+                "city" : "Florida",
+                "map_address" : 33301,
+                "created" : 1720721520,
+                "edited" : null
+            }
+        },
+        {
+            "id" : 30,
+            "account": {
+                "id" : 33,
+                "external_id" : "account-username2",
+                "user_name" : "username2",
+                "password" : "ae916840048d5582f4a9c2f1d2b9f6a8",
+                "email" : "username2@gmail.com",
+                "is_verified" : true,
+                "is_active" : true,
+                "is_soft_deleted" : false,
+                "delete_reason" : null,
+                "created" : 1720214346,
+                "edited" : null
+            },
+            "name" : "Andy",
+            "surname" : "Bernard",
+            "phone_number" : "431940943324",
+            "created" : 1720214346,
+            "edited" : null,
+            "location": {
+                "id" : 25,
+                "address" : "West Palm",
+                "zipcode" : 33301,
+                "city" : "Florida",
+                "map_address" : null,
+                "created" : 1720214346,
+                "edited" : null
+            }
+        }
+    ]
+}
